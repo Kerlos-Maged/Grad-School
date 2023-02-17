@@ -19,3 +19,642 @@ li {
   z-index: 999999;
 }
 
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  width: 100%;
+  padding: 24px;
+  z-index: 100;
+  position: fixed;
+  background-color: rgb(12, 18, 40);
+}
+header .menu {
+  display: none;
+  width: 40px;
+  position: relative;
+  right: 0%;
+}
+@media (max-width: 1073px) {
+  header .menu {
+    display: flex;
+    width: 30px;
+    height: 25px;
+    align-items: center;
+    cursor: pointer;
+  }
+  header .menu span {
+    width: 100%;
+    background-color: white;
+    height: 4px;
+    border-radius: 20px;
+  }
+  header .menu span:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  header .menu span:last-child {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  header .menu.active span {
+    width: 0%;
+  }
+  header .menu.active span:first-child {
+    width: 100%;
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+  header .menu.active span:last-child {
+    width: 100%;
+    transform: rotate(-45deg) translate(10px, -7px);
+  }
+}
+header .container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px auto;
+}
+header .logo h3 {
+  font-size: 30px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: white;
+}
+header .logo h3 span {
+  color: #f5a425;
+}
+header .links {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1073px) {
+  header .links {
+    display: none;
+  }
+}
+header .links li a {
+  color: white;
+  padding: 10px 20px;
+  margin: 0px 6px;
+  border: 2px solid transparent;
+  font-size: 15px;
+  font-weight: 800;
+}
+header .links li a.active {
+  border: 2px solid #f5a425;
+}
+header .links li a:hover {
+  border: 2px solid #ffc362;
+  transition: 0.3s all ease-in-out;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .bg-vedio{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.home .bg-vedio video{ 
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.home .bg-vedio .overlay{
+  position: absolute;
+  background-color: rgba(12, 18, 40, 0.719);
+  top: 0;
+  left: 0; 
+  width: 100%;
+  height: 100%;
+}
+
+.home .bg-text{ 
+  text-align: center;
+}
+
+.home .bg-text p{
+  color: rgb(243, 243, 243);
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.home .bg-text h2 {
+  font-size: 54px;
+  margin: 8px 0px;
+  color: white;
+  text-transform: uppercase;
+  margin: 20px 0px;
+}
+
+.home .bg-text h2 span {
+  color: #f5a425;
+  font-weight: 1000;
+}
+
+
+.home .bg-text .btn {
+  text-align: center  ;
+  margin-top: 10px;
+  
+}
+
+.home .bg-text .btn a {
+  font-size: 18px;
+  color: white;
+  padding: 7px 20px;
+  background-color: #f5a425;
+  border: 2px solid #f5a425;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.home .bg-text .btn a:hover {
+  background-color: transparent;
+}
+
+.chosing {
+  background-image: url('../images/choosing-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  padding: 80px 0px;
+  width: 100%;
+  overflow: hidden;
+}
+
+section {
+  overflow: hidden;
+}
+.title-sec {
+  text-align: center;
+  color: #eeeeee;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-sec h1 {
+  padding: 14px ;    
+  font-size: 20px;
+  border: 2px solid rgba(250,250,250,0.1);
+  position: relative;
+}
+
+.title-sec h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100%;
+  height: 80px;
+  width: 3px;
+  background-color:  rgba(250,250,250,0.1);
+}
+
+.chosing .chose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 0px;
+  margin: 0px auto;
+}
+
+.chosing .chose .choice h3 {
+  color: rgb(207, 207, 207);
+  font-size: 18px;
+}
+
+.chosing .chose .choice span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 0px auto;
+  margin-top: 14px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chosing .chose .choice span.active {
+  margin-top: 14px;
+  background-color: #f5a425;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 3;
+}
+
+.chosing .chose .choice span.active::before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  border-radius: 50%;
+  height: 10px;
+  border: 2px solid #eeee;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.chosing .container {
+  width: 60%;
+  margin-top: 20px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.chosing .container .content{
+  width: 600px;
+}
+
+.chosing .container .content h3{
+  color: #f5a425;
+  font-size: 32px;
+  line-height: 2;
+  margin-top: 10px;
+}
+
+.chosing .container .content p{
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 2;
+  margin-top: 10px;
+}
+
+@media screen and (max-width:1800px){
+  .chosing {
+    background-image: url('../images/choosing-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    padding: 80px 0px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .chosing .title-sec {
+    text-align: center;
+    color: #eeeeee;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chosing .title-sec h1 {
+    padding: 14px ;    
+    font-size: 20px;
+    border: 2px solid rgba(250,250,250,0.1);
+    position: relative;
+  }
+  
+  .chosing .title-sec h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100%;
+    height: 80px;
+    width: 3px;
+    background-color:  rgba(250,250,250,0.1);
+  }
+  
+  .chosing .chose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0px;
+    margin: 0px auto;
+  }
+  
+  .chosing .chose .choice h3 {
+    color: rgb(207, 207, 207);
+    font-size: 18px;
+  }
+  
+  .chosing .chose .choice span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 0px auto;
+    margin-top: 14px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .chosing .chose .choice span.active {
+    margin-top: 14px;
+    background-color: #f5a425;
+    cursor: pointer;
+  
+    position: relative;
+    z-index: 3;
+  }
+  
+  .chosing .chose .choice span.active::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    border-radius: 50%;
+    height: 10px;
+    border: 2px solid #eeee;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .chosing .container {
+    width: 80%;
+    margin-top: 20px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+  }
+  
+  .chosing .container .content{
+    width: 500px;
+  }
+}
+
+
+@media screen and (max-width:1080px){
+  .chosing .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 30px;
+    padding: 40px 0px;
+    width: 95%;
+    margin: 0px auto;
+  }
+  .chosing .container .img {
+    width: 70%;
+    margin: 0px auto;
+  }
+  .chosing .container .img img{
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  .chosing .content {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:680px){
+  .chosing .container .img {
+    width: 100%;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (max-width: 560px){
+  .chosing .chose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 40px 0px;
+    margin: 0px auto;
+  }
+  .chosing .container .content{
+    width: 100%;
+  }
+  
+  .chosing .chose .choice h3 {
+    color: rgb(207, 207, 207);
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+.courses {
+  border-top: 1px solid rgba(250,250,250,0.1);
+  width: 100%;
+  padding: 80px 0px;
+  background-image: url('../images/choosing-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.courses-slider {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8%;
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.courses-slider .card {
+  width: 300px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.courses-slider .card .content{
+  padding: 10px 16px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+}
+
+
+.courses-slider .card .content .ft-card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cards {
+  width: 55%;
+  margin: 0px auto;
+  left: 50%;
+  bottom: 00%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+@media screen and (max-width:1800px){
+  .cards {
+    width: 65%;
+  }
+}
+
+.cards .container {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.cards .card {
+  width: 300px;
+  height: 100px;
+  transition: all 0.4s ;
+  background-color: rgb(12, 18, 40);
+}
+
+.cards .card:first-child {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.cards .card:last-child {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.cards .card:nth-child(2) {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.cards .card:hover {
+  height: 300px;
+  background-color: #f5a425;
+}
+
+.cards .card .title {
+  height: 70px;
+  display: flex;
+  justify-items: center;
+}
+
+.cards .card .title h3 {
+  color: white;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.cards .card .title i{
+  font-size: 28px;
+  color: white; 
+  margin-right: 20px;
+}
+
+
+.cards .card p {
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.cards .card a {
+  color: rgb(224, 224, 224);
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.cards .card {
+  padding: 30px 20px;
+}
+
+
+@media screen and (max-width: 1350px){
+  .cards {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:1020px){
+  .cards {
+    width: 100%;
+    margin: 0px auto ;
+    bottom: 00%;
+    height: auto;
+    background-color: #0c1228;
+    transform: translateX(-50%);
+    position: relative;
+  }
+  
+  .cards .container {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .cards .card:first-child {
+    position: static;
+    display: block;
+  }
+  
+  .cards .card:last-child {
+    position: static;
+    display: block;
+  }
+  
+  .cards .card:nth-child(2) {
+    position: static;
+    display: block;
+    transform: translate(0);
+  }
+  
+  .cards .card {
+    width: 60%;
+    position: static;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .cards .card:hover {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width:680px){
+  .cards .card {
+    width: 90%;
+  }
+}
