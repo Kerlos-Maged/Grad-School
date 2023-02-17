@@ -1,0 +1,387 @@
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .bg-vedio{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.home .bg-vedio video{ 
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.home .bg-vedio .overlay{
+  position: absolute;
+  background-color: rgba(12, 18, 40, 0.719);
+  top: 0;
+  left: 0; 
+  width: 100%;
+  height: 100%;
+}
+
+.home .bg-text{ 
+  text-align: center;
+}
+
+.home .bg-text p{
+  color: rgb(243, 243, 243);
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.home .bg-text h2 {
+  font-size: 54px;
+  margin: 8px 0px;
+  color: white;
+  text-transform: uppercase;
+  margin: 20px 0px;
+}
+
+.home .bg-text h2 span {
+  color: #f5a425;
+  font-weight: 1000;
+}
+
+
+.home .bg-text .btn {
+  text-align: center  ;
+  margin-top: 10px;
+  
+}
+
+.home .bg-text .btn a {
+  font-size: 18px;
+  color: white;
+  padding: 7px 20px;
+  background-color: #f5a425;
+  border: 2px solid #f5a425;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.home .bg-text .btn a:hover {
+  background-color: transparent;
+}
+
+.chosing {
+  background-image: url('../images/choosing-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  padding: 80px 0px;
+  width: 100%;
+  overflow: hidden;
+}
+
+section {
+  overflow: hidden;
+}
+.title-sec {
+  text-align: center;
+  color: #eeeeee;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-sec h1 {
+  padding: 14px ;    
+  font-size: 20px;
+  border: 2px solid rgba(250,250,250,0.1);
+  position: relative;
+}
+
+.title-sec h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100%;
+  height: 80px;
+  width: 3px;
+  background-color:  rgba(250,250,250,0.1);
+}
+
+.chosing .chose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 0px;
+  margin: 0px auto;
+}
+
+.chosing .chose .choice h3 {
+  color: rgb(207, 207, 207);
+  font-size: 18px;
+}
+
+.chosing .chose .choice span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 0px auto;
+  margin-top: 14px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chosing .chose .choice span.active {
+  margin-top: 14px;
+  background-color: #f5a425;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 3;
+}
+
+.chosing .chose .choice span.active::before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  border-radius: 50%;
+  height: 10px;
+  border: 2px solid #eeee;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.chosing .container {
+  width: 60%;
+  margin-top: 20px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.chosing .container .content{
+  width: 600px;
+}
+
+.chosing .container .content h3{
+  color: #f5a425;
+  font-size: 32px;
+  line-height: 2;
+  margin-top: 10px;
+}
+
+.chosing .container .content p{
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 2;
+  margin-top: 10px;
+}
+
+@media screen and (max-width:1800px){
+  .chosing {
+    background-image: url('../images/choosing-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    padding: 80px 0px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .chosing .title-sec {
+    text-align: center;
+    color: #eeeeee;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chosing .title-sec h1 {
+    padding: 14px ;    
+    font-size: 20px;
+    border: 2px solid rgba(250,250,250,0.1);
+    position: relative;
+  }
+  
+  .chosing .title-sec h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100%;
+    height: 80px;
+    width: 3px;
+    background-color:  rgba(250,250,250,0.1);
+  }
+  
+  .chosing .chose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0px;
+    margin: 0px auto;
+  }
+  
+  .chosing .chose .choice h3 {
+    color: rgb(207, 207, 207);
+    font-size: 18px;
+  }
+  
+  .chosing .chose .choice span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 0px auto;
+    margin-top: 14px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .chosing .chose .choice span.active {
+    margin-top: 14px;
+    background-color: #f5a425;
+    cursor: pointer;
+  
+    position: relative;
+    z-index: 3;
+  }
+  
+  .chosing .chose .choice span.active::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    border-radius: 50%;
+    height: 10px;
+    border: 2px solid #eeee;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .chosing .container {
+    width: 80%;
+    margin-top: 20px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+  }
+  
+  .chosing .container .content{
+    width: 500px;
+  }
+}
+
+
+@media screen and (max-width:1080px){
+  .chosing .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 30px;
+    padding: 40px 0px;
+    width: 95%;
+    margin: 0px auto;
+  }
+  .chosing .container .img {
+    width: 70%;
+    margin: 0px auto;
+  }
+  .chosing .container .img img{
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  .chosing .content {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:680px){
+  .chosing .container .img {
+    width: 100%;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (max-width: 560px){
+  .chosing .chose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 40px 0px;
+    margin: 0px auto;
+  }
+  .chosing .container .content{
+    width: 100%;
+  }
+  
+  .chosing .chose .choice h3 {
+    color: rgb(207, 207, 207);
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+.courses {
+  border-top: 1px solid rgba(250,250,250,0.1);
+  width: 100%;
+  padding: 80px 0px;
+  background-image: url('../images/choosing-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.courses-slider {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8%;
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.courses-slider .card {
+  width: 300px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.courses-slider .card .content{
+  padding: 10px 16px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+}
+
+
+.courses-slider .card .content .ft-card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
